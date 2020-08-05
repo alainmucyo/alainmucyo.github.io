@@ -1,0 +1,90 @@
+<!--<!DOCTYPE html>-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="icons/themify-icons.css">
+    <title>Blog</title>
+</head>
+<body>
+<header class="header">
+    <img src="img/logo.png" class="logo" alt=""/>
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="create_blog.html"> Create blog</a>
+            </li>
+            <li class="nav-item">
+                <a href="login.html"> Login</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<section class="breadcrumb">
+</section>
+<section class="create-article">
+    <div class="card article-form">
+    <form action="" class="form">
+        <h1 class="mb-4">Create an article</h1>
+        <div class="form-group">
+            <input type="text" class="form-input" id="title" placeholder="Article title" />
+        </div>
+        <div class="form-group">
+            <input type="url" class="form-input" id="url" placeholder="Image URL" />
+        </div>
+        <div class="form-group">
+            <textarea name="" id="body" cols="30" rows="10" placeholder="Blog content" class="form-input"></textarea>
+        </div>
+        <div class="form-group">
+           <button class="btn btn-primary" type="submit">Create an article</button>
+        </div>
+    </form>
+    </div>
+</section>
+<footer class="footer">
+    <p class="footer-details">
+        This project was created by MUCYO M. Alain
+        <br class="footer-break"/>
+        for study purposes at Andela.
+    </p>
+    <div class="footer__icons">
+        <a href="#" class="footer__icons__link">
+            <span class="ti-facebook"></span>
+        </a>
+        <a href="#" class="footer__icons__link">
+            <span class="ti-instagram"></span>
+        </a>
+        <a href="#" class="footer__icons__link">
+            <span class="ti-linkedin"></span>
+        </a>
+    </div>
+</footer>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+<!--<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>-->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCgntJB7R3NZ5Jk47VZ9zZizt2tUVqISZc",
+        authDomain: "blog-acb36.firebaseapp.com",
+        databaseURL: "https://blog-acb36.firebaseio.com",
+        projectId: "blog-acb36",
+        storageBucket: "blog-acb36.appspot.com",
+        messagingSenderId: "350848634695",
+        appId: "1:350848634695:web:8f04d32ededd440c7e0662",
+        measurementId: "G-KHDZ9NRLZB"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    // firebase.analytics();
+    console.log(firebase.auth)
+</script>
+<script type="text/javascript" src="js/auth.js"></script>
+</body>
+</html>

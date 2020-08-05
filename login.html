@@ -1,0 +1,56 @@
+<!--<!DOCTYPE html>-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/login/login.css" rel="stylesheet">
+    <title>Blog</title>
+</head>
+<body class="login-page">
+<div class="login-container">
+    <form class="login-form" method="post" action="#" onsubmit="login(event)">
+        <div class="form-group">
+            <input class="form-input" type="email" id="email" placeholder="Email" required/>
+            <span class="text-invalid" id="invalid">Sorry, wrong email or password!</span>
+        </div>
+        <div class="form-group">
+            <input class="form-input" type="password" id="password" placeholder="Password" required/>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block loader-block" id="login_btn">
+                <span id="login_btn_text">Login</span> <img src="img/loader.gif" id="loader_img"/>
+            </button>
+        </div>
+        <div class="not-registered">
+            <span class="not-registered__text">Not Registered? </span>
+            <a href="#" class="not-registered__link">Create an account</a>
+        </div>
+    </form>
+</div>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+<!--<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>-->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCgntJB7R3NZ5Jk47VZ9zZizt2tUVqISZc",
+        authDomain: "blog-acb36.firebaseapp.com",
+        databaseURL: "https://blog-acb36.firebaseio.com",
+        projectId: "blog-acb36",
+        storageBucket: "blog-acb36.appspot.com",
+        messagingSenderId: "350848634695",
+        appId: "1:350848634695:web:8f04d32ededd440c7e0662",
+        measurementId: "G-KHDZ9NRLZB"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    // firebase.analytics();
+    console.log(firebase.auth)
+</script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>
