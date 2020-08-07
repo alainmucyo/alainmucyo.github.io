@@ -16,7 +16,7 @@ function showArticle() {
                 ${data.body}
             </p>
             <div class="article-btn pt-2">
-                <a href="#" class="btn btn-primary btn-sm" >Edit</a>
+                <a href="edit_blog.html?article=${article}" class="btn btn-primary btn-sm" >Edit</a>
                 <a href="#" class="btn btn-danger btn-sm" id="delete" onclick="deleteArticle(event)">Delete</a>
             </div>
         </div>

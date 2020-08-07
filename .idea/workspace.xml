@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f4a1b8a-3a00-44b7-b018-26440b82f09d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/article_details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/humans.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/blog/show.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/blog/show.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robots.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +51,13 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/js/blog" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/js/blog" />
-      <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js/blog" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -84,6 +90,7 @@
       <workItem from="1596661011807" duration="443000" />
       <workItem from="1596687794576" duration="11673000" />
       <workItem from="1596776356587" duration="497000" />
+      <workItem from="1596787606843" duration="1977000" />
     </task>
     <servers />
   </component>
@@ -95,6 +102,10 @@
       <screen x="0" y="0" width="1366" height="744" />
     </state>
     <state x="342" y="163" key="run.anything.popup/0.0.1366.744@0.0.1366.744" timestamp="1596561640592" />
+    <state x="346" y="65" width="672" height="678" key="search.everywhere.popup" timestamp="1596789529968">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state x="346" y="65" width="672" height="678" key="search.everywhere.popup/0.0.1366.744@0.0.1366.744" timestamp="1596789529968" />
     <state x="404" y="286" width="542" height="169" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1596561547455">
       <screen x="0" y="0" width="1366" height="744" />
     </state>

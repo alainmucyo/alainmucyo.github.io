@@ -515,6 +515,14 @@ body {
     .article-details {
         width: 90%;
     }
+    .nav-item {
+        margin-left: .5rem;
+    }
+    .header {
+        padding: .2rem .5rem;
+    }
+
+
 }
 
 .alert {
