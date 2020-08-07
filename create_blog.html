@@ -29,19 +29,26 @@
 </section>
 <section class="create-article">
     <div class="card article-form">
-    <form action="" class="form">
+    <form action="" class="form" id="blog_form">
         <h1 class="mb-4">Create an article</h1>
+            <div class="alert alert-danger">
+
+            </div>
+            <div class="alert alert-success">
+
+            </div>
         <div class="form-group">
-            <input type="text" class="form-input" id="title" placeholder="Article title" />
+            <input type="text" class="form-input" id="title" placeholder="Article title" required/>
         </div>
         <div class="form-group">
-            <input type="url" class="form-input" id="url" placeholder="Image URL" />
+            <input type="url" class="form-input" id="url" placeholder="Image URL" required/>
         </div>
         <div class="form-group">
-            <textarea name="" id="body" cols="30" rows="10" placeholder="Blog content" class="form-input"></textarea>
+            <textarea name="" id="body" cols="30" rows="10" placeholder="Blog content" class="form-input"
+                      required></textarea>
         </div>
         <div class="form-group">
-           <button class="btn btn-primary" type="submit">Create an article</button>
+            <button class="btn btn-primary" type="submit" id="submit">Create an article</button>
         </div>
     </form>
     </div>
@@ -65,6 +72,7 @@
     </div>
 </footer>
 <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
 <!--<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>-->
 <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
 
@@ -86,5 +94,6 @@
     console.log(firebase.auth)
 </script>
 <script type="text/javascript" src="js/auth.js"></script>
+<script type="text/javascript" src="js/blog/create_blog.js"></script>
 </body>
 </html>

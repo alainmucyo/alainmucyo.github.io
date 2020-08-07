@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="icons/themify-icons.css">
     <title>Blog</title>
 </head>
-<body>
+<body onload="showArticles()">
 <header class="header">
     <img src="img/logo.png" class="logo" alt=""/>
     <nav class="nav">
@@ -32,137 +32,9 @@
 </section>
 <section class="articles">
     <div class="cards">
-        <div class="card">
-            <a class="card-img" href="article_details.html"><img src="img/person1.jpg" alt=""></a>
-            <div class="card-details">
-                <a href="article_details.html" class="card-title">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit dolor sit amet.
-                </a>
-            </div>
-            <div class="card-icons">
-                <div class="icon">
-                    <i class="ti-heart"></i>
-                    <span class="icon-number">57</span>
-                </div>
-                <div class="icon">
-                    <i class="ti-comment"></i>
-                    <span class="icon-number">8</span>
-                </div>
-                <div class="icon">
-                    <i class="ti-eye"></i>
-                    <span class="icon-number">165</span>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <a class="card-img" href="#"><img src="img/person1.jpg" alt=""></a>
-            <div class="card-details">
-                <a href="#" class="card-title">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit dolor sit amet.
-                </a>
-            </div>
-            <div class="card-icons">
-                <div class="icon">
-                    <i class="ti-heart"></i>
-                    <span class="icon-number">57</span>
-                </div>
-                <div class="icon">
-                    <i class="ti-comment"></i>
-                    <span class="icon-number">8</span>
-                </div>
-                <div class="icon">
-                    <i class="ti-eye"></i>
-                    <span class="icon-number">165</span>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <a class="card-img" href="#"><img src="img/person1.jpg" alt=""></a>
-            <div class="card-details">
-                <a href="#" class="card-title">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit dolor sit amet.
-                </a>
-            </div>
-            <div class="card-icons">
-                <div class="icon">
-                    <i class="ti-heart"></i>
-                    <span class="icon-number">57</span>
-                </div>
-                <div class="icon">
-                    <i class="ti-comment"></i>
-                    <span class="icon-number">8</span>
-                </div>
-                <div class="icon">
-                    <i class="ti-eye"></i>
-                    <span class="icon-number">165</span>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <a class="card-img" href="#"><img src="img/person1.jpg" alt=""></a>
-            <div class="card-details">
-                <a href="#" class="card-title">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit dolor sit amet.
-                </a>
-            </div>
-            <div class="card-icons">
-                <div class="icon">
-                    <i class="ti-heart"></i>
-                    <span class="icon-number">57</span>
-                </div>
-                <div class="icon">
-                    <i class="ti-comment"></i>
-                    <span class="icon-number">8</span>
-                </div>
-                <div class="icon">
-                    <i class="ti-eye"></i>
-                    <span class="icon-number">165</span>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <a class="card-img" href="#"><img src="img/person1.jpg" alt=""></a>
-            <div class="card-details">
-                <a href="#" class="card-title">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit dolor sit amet.
-                </a>
-            </div>
-            <div class="card-icons">
-                <div class="icon">
-                    <i class="ti-heart"></i>
-                    <span class="icon-number">57</span>
-                </div>
-                <div class="icon">
-                    <i class="ti-comment"></i>
-                    <span class="icon-number">8</span>
-                </div>
-                <div class="icon">
-                    <i class="ti-eye"></i>
-                    <span class="icon-number">165</span>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <a class="card-img" href="#"><img src="img/person1.jpg" alt=""></a>
-            <div class="card-details">
-                <a href="#" class="card-title">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit dolor sit amet.
-                </a>
-            </div>
-            <div class="card-icons">
-                <div class="icon">
-                    <i class="ti-heart"></i>
-                    <span class="icon-number">57</span>
-                </div>
-                <div class="icon">
-                    <i class="ti-comment"></i>
-                    <span class="icon-number">8</span>
-                </div>
-                <div class="icon">
-                    <i class="ti-eye"></i>
-                    <span class="icon-number">165</span>
-                </div>
-            </div>
+        <div class="alert alert-loader">
+            <h2>Loading articles...</h2>
+            <img src="img/ZZ5H.gif" alt="">
         </div>
     </div>
 </section>
@@ -185,6 +57,7 @@
     </div>
 </footer>
 <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
 <!--<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>-->
 <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
 
@@ -206,5 +79,6 @@
     console.log(firebase.auth)
 </script>
 <script type="text/javascript" src="js/auth.js"></script>
+<script type="text/javascript" src="js/blog/index.js"></script>
 </body>
 </html>

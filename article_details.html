@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="icons/themify-icons.css">
     <title>Blog</title>
 </head>
-<body>
+<body onload="showArticle()">
 <header class="header">
     <img src="img/logo.png" class="logo" alt=""/>
     <nav class="nav">
@@ -29,24 +29,9 @@
 </section>
 <section class="section-article">
     <div class="article-details">
-        <img src="img/person2.jpg" class="article-image"/>
-        <div class="article-content">
-            <h2 class="article-title">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </h2>
-            <p class="article-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto consequuntur, deserunt
-                doloremque
-                excepturi exercitationem fugit hic, laboriosam non nostrum omnis perspiciatis quibusdam tenetur?
-                Expedita
-                natus omnis rerum saepe tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at ea
-                expedita inventore minus nemo perspiciatis quam suscipit tempora unde? Animi aspernatur consectetur
-                doloremque excepturi fugiat, minus nulla quidem veritatis.
-            </p>
-            <div class="article-btn">
-                <a href="#" class="btn btn-primary btn-sm">Edit</a>
-                <a href="#" class="btn btn-danger btn-sm">Delete</a>
-            </div>
+        <div class="alert alert-loader" style="background-color: #fff; box-shadow: none">
+            <h2>Loading the article...</h2>
+            <img src="img/ZZ5H.gif" alt="">
         </div>
     </div>
 </section>
@@ -90,5 +75,6 @@
     console.log(firebase.auth)
 </script>
 <script type="text/javascript" src="js/auth.js"></script>
+<script type="text/javascript" src="js/blog/show.js"></script>
 </body>
 </html>
